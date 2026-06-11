@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#121212;
+    color:white;
+    min-height:100vh;
+}
+
+header{
+    text-align:center;
+    padding:40px 20px;
+    background:#0d0d0d;
+    border-bottom:1px solid #333;
+}
+
+header h1{
+    margin-bottom:10px;
+}
+
+header p{
+    color:#ccc;
+}
+
+main{
+    width:90%;
+    max-width:1000px;
+    margin:30px auto;
+}
+
+.metodo,
+.instrucciones,
+.whatsapp{
+    background:#1c1c1c;
+    padding:25px;
+    border-radius:15px;
+    margin-bottom:25px;
+    box-shadow:0 0 10px rgba(0,0,0,.3);
+}
+
+.metodo h2,
+.instrucciones h2,
+.whatsapp h2{
+    margin-bottom:15px;
+}
+
+.datos p{
+    margin:10px 0;
+}
+
+.instrucciones ol{
+    margin-left:25px;
+}
+
+.instrucciones li{
+    margin-bottom:10px;
+}
+
+.whatsapp{
+    text-align:center;
+}
+
+.whatsapp a{
+    display:inline-block;
+    margin-top:20px;
+    padding:15px 25px;
+    border-radius:10px;
+    background:#25d366;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.whatsapp a:hover{
+    opacity:.8;
+}
+
+.volver{
+    text-align:center;
+    margin-top:30px;
+}
+
+.volver a{
+    text-decoration:none;
+    color:#ffd700;
+    font-weight:bold;
+    font-size:18px;
+}
+
+footer{
+    margin-top:40px;
+    padding:25px;
+    text-align:center;
+    background:#0d0d0d;
+    border-top:1px solid #333;
+}
+
+footer p{
+    margin:5px 0;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    header h1{
+        font-size:28px;
+    }
+    main{
+        width:95%;
+    }
+}

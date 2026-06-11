@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteos Daniel - BMW X1 2012</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!-- MENÚ -->
+    <nav class="menu" id="inicio">
+        <div class="logo">
+            Sorteos Daniel
+        </div>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sorteo">Sorteo</a></li>
+            <li><a href="#boletos">Boletos Disponibles</a></li>
+            <li><a href="metodopago.html">Métodos de Pago</a></li>
+        </ul>
+    </nav>
+    <!-- BARRA FLOTANTE -->
+    <div
+        id="barraSeleccion"
+        class="barra-seleccion">
+    </div>
+    <!-- ENCABEZADO -->
+    <section class="encabezado">
+        <h1>
+            BMW X1 2012
+        </h1>
+        <p>
+            Fecha del sorteo:
+            20 de Agosto de 2026
+        </p>
+    </section>
+    <!-- CARRUSEL -->
+    <div>
+    <section class="carrusel-contenedor">
+        <button
+            class="flecha izquierda"
+            onclick="anterior()">
+            ❮
+        </button>
+        <div class="carrusel">
+            <div class="carrusel-desplazables">
+                <img
+                    src="../assets/premio/bmw_premio.jpg"
+                    alt="BMW">
+                <img
+                    src="../assets/premio/frente_bmw.jpg"
+                    alt="BMW">
+                <img
+                    src="../assets/premio/interior_bmw.jpg"
+                    alt="BMW">
+            </div>
+        </div>
+        <button
+            class="flecha derecha"
+            onclick="siguiente()">
+            ❯
+        </button>
+    </section>
+    </div>
+    <!-- TEXTO -->
+    <section class="introduccion">
+        <h2>
+            Lista de Boletos
+        </h2>
+        <p>
+            Elige tus números favoritos o utiliza
+            nuestra Máquina de la Suerte para generar
+            números aleatorios disponibles.
+        </p>
+    </section>
+    <!-- INFORMACIÓN DEL SORTEO -->
+    <section
+        id="sorteo"
+        class="info-sorteo">
+        <h2>
+            Información del Sorteo
+        </h2>
+        <h3>
+            $50 MXN por boleto
+        </h3>
+        <p>
+            Por cada boleto liquidado participas por:
+        </p>
+        <h2>
+            BMW X1 2012
+        </h2>
+        <p>
+            Fecha del sorteo:
+            20 de Agosto de 2026
+        </p>
+        <p>
+            Este sorteo está sujeto a 80% de venta para llevarse a cabo.
+        </p>
+    </section>
+    <!-- PREMIOS -->
+    <section class="premios">
+        <h2>
+            🏆 Premios
+        </h2>
+        <ul>
+            <li>
+                BMW X1 2012
+            </li>
+            <li>
+                Premio sorpresa
+            </li>
+        </ul>
+    </section>
+    <!-- NOTA -->
+    <section class="nota-importante">
+        ⚠️ IMPORTANTE
+        <br><br>
+        Después de realizar tu pago,
+        deberás enviar tu comprobante
+        vía WhatsApp para validar
+        tu participación.
+        <br><br>
+        Este sorteo se llevara a cabo con
+        la loteria nacional, se tomaran los dos
+        primeros numeros del premio mayor y los dos
+        primeros del segundo lugar, el dado caso de
+        salir no vendido o pagado, se recorrera el sorteo.
+    </section>
+    <!-- BOLETOS -->
+    <section
+        id="boletos"
+        class="seccion-boletos">
+        <!-- MAQUINA -->
+        <div class="maquina-suerte">
+            <h2>
+                Máquina de la Suerte
+            </h2>
+            <select id="cantidadSuerte">
+                <option value="1">
+                    1 boleto $50
+                </option>
+                <option value="2">
+                    2 boletos $100
+                </option>
+                <option value="3">
+                    3 boletos $150
+                </option>
+                <option value="5">
+                    5 boletos $250
+                </option>
+                <option value="10">
+                    10 boletos $500
+                </option>
+            </select>
+            <button
+                onclick="usarSuerte()">
+                Generar Boletos
+            </button>
+            <div id="resultadoSuerte"></div>
+        </div>
+        <!-- BUSCADOR -->
+        <div class="buscador">
+            <h2>
+                Buscar Boletos
+            </h2>
+            <select id="tipoBusqueda">
+                <option value="contiene">
+                    Contiene
+                </option>
+                <option value="empieza">
+                    Empieza con
+                </option>
+                <option value="termina">
+                    Termina con
+                </option>
+                <option value="igual">
+                    Igual a
+                </option>
+            </select>
+            <input
+                type="text"
+                id="textoBusqueda"
+                placeholder="Ejemplo: 77">
+            <button
+                onclick="buscarBoletos()">
+                Buscar
+            </button>
+        </div>
+        <!-- LISTA -->
+        <h2>
+            Boletos Disponibles
+        </h2>
+        <div
+            class="boletos"
+            id="listaBoletos">
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            © 2026 Sorteos Daniel
+        </p>
+        <p>
+            Sorteo a base de loteria nacional
+        </p>
+        <p>
+            Desarrollado por Daniel Martínez
+        </p>
+        <p>
+            Todos los derechos reservados
+        </p>
+        <p>
+            <a class="condiciones" href="Avisoprivacidad.html">Aviso de Privacidad</a>
+        </p>
+    </footer>
+    <!-- SCRIPTS -->
+    <script src="../js/boletos.js"></script>
+    <script src="../js/enviarWhatsapp.js"></script>
+    <script src="../js/carrusel.js"></script>
+</body>
+</html>
